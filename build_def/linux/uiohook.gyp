@@ -13,7 +13,7 @@
 			"libuiohook/src/x11/system_properties.c"
 		],
 		"cflags": [
-			"-std=c++1<!([ $(gcc -dumpversion) -lt 5 ] && echo -n y || echo -n 4)",
+			"-std=c++1<!([ $(gcc -dumpversion | cut -c 1) -lt 5 ] && echo -n y || echo -n 4)",
 			"-fPIC"
 		],
 		"link_settings": {
