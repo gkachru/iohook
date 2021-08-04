@@ -28,7 +28,7 @@ function install(runtime, abi, platform, arch, cb) {
   const essential = runtime + '-v' + abi + '-' + platform + '-' + arch;
   const pkgVersion = pkg.version;
   const currentPlatform = 'iohook-v' + pkgVersion + '-' + essential;
-  const baseURL = 'https://github.com/wilix-team/iohook/releases/download/v';
+  let baseURL = 'https://github.com/wilix-team/iohook/releases/download/v';
 
   if (essential == "electron-v82-linux-x64") {
     baseURL = 'https://github.com/gkachru/iohook/releases/download/v';
